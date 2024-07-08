@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95CC71F82C3AEE77009FB8DD /* SNESCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC71F72C3AEE77009FB8DD /* SNESCore.swift */; };
+		95CC71FC2C3AEEDC009FB8DD /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5BACE2C2D66120034CAD7 /* ArcadiaCore.framework */; };
 		95F5B3AA2C2D3DBE0034CAD7 /* ArcadiaSNESCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 95F5B3A92C2D3DBE0034CAD7 /* ArcadiaSNESCore.docc */; };
 		95F5B3B02C2D3DBF0034CAD7 /* ArcadiaSNESCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5B3A52C2D3DBE0034CAD7 /* ArcadiaSNESCore.framework */; };
 		95F5B3B52C2D3DBF0034CAD7 /* ArcadiaSNESCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5B3B42C2D3DBF0034CAD7 /* ArcadiaSNESCoreTests.swift */; };
@@ -218,8 +220,6 @@
 		95F5BAC92C2D552F0034CAD7 /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F5B7232C2D405C0034CAD7 /* movie.cpp */; };
 		95F5BACA2C2D554B0034CAD7 /* bml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F5B6ED2C2D405C0034CAD7 /* bml.cpp */; };
 		95F5BACC2C2D65760034CAD7 /* SNESCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5BACB2C2D65760034CAD7 /* SNESCore.swift */; };
-		95F5BACF2C2D66120034CAD7 /* ArcadiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5BACE2C2D66120034CAD7 /* ArcadiaCore.framework */; };
-		95F5BAD02C2D66120034CAD7 /* ArcadiaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5BACE2C2D66120034CAD7 /* ArcadiaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		95F5BAD22C2D66160034CAD7 /* Libretrosnes9x.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5B3C42C2D3FBD0034CAD7 /* Libretrosnes9x.framework */; };
 		95F5BAD32C2D66160034CAD7 /* Libretrosnes9x.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95F5B3C42C2D3FBD0034CAD7 /* Libretrosnes9x.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -255,7 +255,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				95F5BAD02C2D66120034CAD7 /* ArcadiaCore.framework in Embed Frameworks */,
 				95F5BAD32C2D66160034CAD7 /* Libretrosnes9x.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -264,6 +263,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		95CC71F72C3AEE77009FB8DD /* SNESCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNESCore.swift; sourceTree = "<group>"; };
 		95F5B3A52C2D3DBE0034CAD7 /* ArcadiaSNESCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArcadiaSNESCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F5B3A82C2D3DBE0034CAD7 /* ArcadiaSNESCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcadiaSNESCore.h; sourceTree = "<group>"; };
 		95F5B3A92C2D3DBE0034CAD7 /* ArcadiaSNESCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ArcadiaSNESCore.docc; sourceTree = "<group>"; };
@@ -550,7 +550,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F5BACF2C2D66120034CAD7 /* ArcadiaCore.framework in Frameworks */,
 				95F5BAD22C2D66160034CAD7 /* Libretrosnes9x.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +566,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CC71FC2C3AEEDC009FB8DD /* ArcadiaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +628,7 @@
 				95F5B75B2C2D405C0034CAD7 /* snes9x */,
 				95F5B3C62C2D3FBD0034CAD7 /* Libretrosnes9x.h */,
 				95F5B3C72C2D3FBD0034CAD7 /* Libretrosnes9x.docc */,
+				95CC71F72C3AEE77009FB8DD /* SNESCore.swift */,
 			);
 			path = Libretrosnes9x;
 			sourceTree = "<group>";
@@ -1322,6 +1323,7 @@
 					};
 					95F5B3C32C2D3FBD0034CAD7 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					95F5B3CC2C2D3FBD0034CAD7 = {
 						CreatedOnToolsVersion = 15.4;
@@ -1441,6 +1443,7 @@
 				95F5BA992C2D532B0034CAD7 /* conffile.cpp in Sources */,
 				95F5BA9A2C2D532F0034CAD7 /* controls.cpp in Sources */,
 				95F5BA9B2C2D53320034CAD7 /* cpu.cpp in Sources */,
+				95CC71F82C3AEE77009FB8DD /* SNESCore.swift in Sources */,
 				95F5BA9F2C2D53660034CAD7 /* dma.cpp in Sources */,
 				95F5BAA02C2D53660034CAD7 /* dsp.cpp in Sources */,
 				95F5BAA12C2D53660034CAD7 /* dsp1.cpp in Sources */,
@@ -1763,6 +1766,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1807,6 +1811,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1818,6 +1823,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1871,6 +1877,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
@@ -1892,6 +1899,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32DR4Q2NF7;
