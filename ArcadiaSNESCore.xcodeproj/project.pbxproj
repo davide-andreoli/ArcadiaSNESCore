@@ -2732,7 +2732,10 @@
 					"-D__LIBRETRO__",
 					"-DHAVE_STRINGS_H",
 					"-DNDEBUG",
-					"-O3",
+					"-O2",
+					"-fno-exceptions",
+					"-DRIGHTSHIFT_IS_SAR",
+					"-DALLOW_CPU_OVERCLOCK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.ArcadiaSNESCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2787,7 +2790,10 @@
 					"-D__LIBRETRO__",
 					"-DHAVE_STRINGS_H",
 					"-DNDEBUG",
-					"-O3",
+					"-O2",
+					"-fno-exceptions",
+					"-DRIGHTSHIFT_IS_SAR",
+					"-DALLOW_CPU_OVERCLOCK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davideandreoli.ArcadiaSNESCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
