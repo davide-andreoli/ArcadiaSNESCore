@@ -43,9 +43,9 @@ extension ArcadiaSNES {
         retro_run()
     }
     
-    public func retroLoadGame(gameInfo: retro_game_info) {
+    public func retroLoadGame(gameInfo: retro_game_info) -> Bool {
         var gameInfo = gameInfo
-        retro_load_game(&gameInfo)
+        return retro_load_game(&gameInfo)
     }
     
     public func retroReset() {
