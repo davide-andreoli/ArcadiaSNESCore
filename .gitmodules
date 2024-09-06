@@ -1,3 +1,0 @@
-[submodule "ArcadiaSNESCore/snes9x"]
-	path = ArcadiaSNESCore/snes9x
-	url = https://github.com/libretro/snes9x.git
